@@ -1,5 +1,5 @@
 # CourseManager
 
-Digital Innovation
+Digital Innovation - Introdução  a Angular
 
-A atividade é realizada acompanhando a tutora
+A atividade realizada acompanhando a tutor Wesllhey Holanda
