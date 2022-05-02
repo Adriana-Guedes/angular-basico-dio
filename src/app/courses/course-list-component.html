@@ -1,0 +1,50 @@
+<h2>Course List</h2>
+
+<div class="form-group row" >
+
+    <label class="col-sm-2 col-form-label" >Filter By</label>
+
+    <div class="col-sm-115" >
+      <input [(ngModel)]="filter"  class="form-control">
+      </div>
+    </div>
+
+<table class="table table-striped" >
+
+  <thead>
+    <tr>
+    <th>Imagem</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Code</th>
+    <th>Release Date</th>
+    <th>Rating</th>
+    <th>Option</th>
+  </tr>
+  </thead>
+  <tbody>
+    <!--VARIAVEL LOCAL PARA A VARIAVEL DEFINIDA NO .ts PARA REPRESENTAR CADA ITERAÇÃO DE CURSOS-->
+    <tr *ngFor="let course of filteredCourses">
+       <!--PARA EXIBIR-->
+      <td><img [src]="course.imageUrl" width="40" height="40"> </td>   <!--INTERPOLAÇÃO DO ARRAY-->
+      <td>{{course.name }}</td>  <!--INTERPOLAÇÃO DO ARRAY-->
+      <td>{{course.price}}</td> <!--INTERPOLAÇÃO DO ARRAY-->
+      <td>{{course.code | lowercase | replace:'-' : ' ' }} </td>    <!--INTERPOLAÇÃO DO ARRAY-->
+      <td>{{course.releaseDate | date : 'dd/MM/yyyy' }}</td>  <!--PIPE DE DATA DO ANGULAR-->
+
+      <td>
+        <app-star [rating]="course.rating "></app-star>  <!--SIMBOLO DAS ESTRELAS-->
+      </td>
+      <td>
+        <a [routerLink]="['/courses/info', course.id]"  class="btn btn-primary mr-2"> Edit</a>
+        <button (clik)="deleteById (course.id)"  class="btn btn-danger"> Delete</button>
+
+
+
+      </td>
+    </tr>
+  </tbody>
+
+
+
+</table>
