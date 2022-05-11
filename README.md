@@ -1,4 +1,4 @@
-# Digital Innovation - Introdução a Angular
+# Digital Innovation One - Introdução a Angular
 
 
 A atividade realizada acompanhando a tutor Wesllhey Holanda
