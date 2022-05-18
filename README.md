@@ -2,8 +2,7 @@
 
 
 A atividade realizada guiada pelo tutor Wesllhey Holanda
-Realização de CRUD  para inserir- atualizar e deletar cursos inseridos, uso de bootstrap  e font form- 
-Awesome para criação de  rating star.
+Realização de CRUD com o framework angular, bootstrap  e font form-Awesome para criação de  rating star.
 
 
 
