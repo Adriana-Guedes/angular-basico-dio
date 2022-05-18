@@ -7,4 +7,4 @@ Realização de CRUD com o framework angular, bootstrap  e font form-Awesome par
 
 
 
-Para funcionamento, necessário também startar via cmd pasta dentro da src > assets > servers > course-manager-server ( após entrar na pasta  executar o comando node serve.js)
+Para funcionamento, necessário também startar back end fake , via cmd pasta dentro da src > assets > servers > course-manager-server ( após entrar na pasta  executar o comando node serve.js)
